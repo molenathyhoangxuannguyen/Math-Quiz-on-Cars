@@ -4,7 +4,7 @@ def banh_xe(bichthuy):
     bichthuy.shape("circle")
     bichthuy.shapesize(0.1,0.1)
     bichthuy.speed(10)
-    bichthuy.pensize(3)
+    bichthuy.pensize(4)
     def ve_hinh_tron(number,cao):
         for i in range(number):
             bichthuy.right(1)
@@ -27,17 +27,11 @@ def banh_xe(bichthuy):
     bichthuy.left(90)
     bichthuy.forward(95)
 
-wns.bgcolor("#ffffff")
-
-thy = turtle.Turtle()
-thy.color("#ccffff")
-thy.begin_fill()
-banh_xe(thy)
-thy.end_fill()
+wns.bgcolor("#33ffff")
 
 def annyong(mauu):
     ngoc = turtle.Turtle()
-    ngoc.color("#e6ffff")
+    ngoc.color("#1affff")
     ngoc.penup()
     ngoc.forward(mauu)
     ngoc.pendown()
@@ -50,8 +44,15 @@ annyong(100)
 annyong(150)
 annyong(200)
 
+
+thy = turtle.Turtle()
+thy.color("#006666")
+thy.begin_fill()
+banh_xe(thy)
+thy.end_fill()
+
 thuy = turtle.Turtle()
-thuy.color("#ccffff")
+thuy.color("#006666")
 thuy.penup()
 thuy.forward(250)
 thuy.pendown()
@@ -59,5 +60,12 @@ thuy.begin_fill()
 banh_xe(thuy)
 thuy.end_fill()
 
-
+jordan = turtle.Turtle()
+jordan.penup()
+jordan.left(90)
+jordan.forward(100)
+jordan.right(90)
+jordan.forward(100)
+jordan.pendown()
+jordan.write("Can you see the movement of the car?", move=False, align="center", font =("TimesNewRoman",12,"bold"))
 wns.exitonclick()

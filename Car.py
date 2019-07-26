@@ -32,7 +32,7 @@ def main():
 
     def annyong(mauu):
         ngoc = turtle.Turtle()
-        ngoc.color("#1aff66")
+        ngoc.color("#33ff77")
         ngoc.penup()
         ngoc.forward(mauu)
         ngoc.pendown()
@@ -48,7 +48,7 @@ def main():
     annyong(2 * 150)
 
     thy = turtle.Turtle()
-    thy.color("#00ff55")
+    thy.color("#1aff66")
     thy.penup()
     thy.forward(-4*150)
     thy.pendown()
@@ -57,7 +57,7 @@ def main():
     thy.end_fill()
 
     thuy = turtle.Turtle()
-    thuy.color("#00ff55")
+    thuy.color("#1aff66")
     thuy.penup()
     thuy.forward(3*150)
     thuy.pendown()
@@ -66,7 +66,7 @@ def main():
     thuy.end_fill()
 
     jordan = turtle.Turtle()
-    jordan.color("#33ff77")
+    jordan.color("#00ff55")
     jordan.pensize(6)
     jordan.penup()
     jordan.left(90)

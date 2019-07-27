@@ -58,17 +58,18 @@ def main():
 
     def nut_that(brother):
         abcxyz = turtle.Turtle()
-        abcxyz.dot(6)
+        abcxyz.shape("circle")
+        abcxyz.shapesize(0.1, 0.1)
         abcxyz.pensize(6)
         abcxyz.penup()
         abcxyz.forward(brother)
         abcxyz.right(90)
-        abcxyz.forward(40)
+        abcxyz.forward(35)
         abcxyz.pendown()
-        abcxyz.stamp()
+        abcxyz.dot()
 
-    nut_that(-4*150-40)
-    nut_that(4*150+40)
+    nut_that(-4*150-32)
+    nut_that(4*150+31)
 
     jordan = turtle.Turtle()
     jordan.color("#0000ff")
@@ -88,12 +89,12 @@ def main():
         thy.penup()
         thy.forward(chieu_rong)
         thy.right(90)
-        thy.forward(50)
+        thy.forward(90)
         thy.pendown()
         thy.write(chu_cai, move=False, align="center", font=("TimesNewRoman", 40, "bold"))
 
-    dau_cuoi_tuong_ung(-4*150-40,"A")
-    dau_cuoi_tuong_ung(4*150+40, "B")
+    dau_cuoi_tuong_ung(-4*150-45,"A")
+    dau_cuoi_tuong_ung(4*150+50, "B")
 
     wns.exitonclick()
 

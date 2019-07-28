@@ -1,3 +1,3 @@
 # Car
-This is a math-problem related to distance calculation.
-Using turtle module, and all related.
+This is a math-problem. Can you calculate the length of AB?
+Using Turtle. Should install Pycharm to run this program,  try to answer the question, and see the explanation.

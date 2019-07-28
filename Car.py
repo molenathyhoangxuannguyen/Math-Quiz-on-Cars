@@ -1,4 +1,5 @@
 import turtle
+from math import pi
 
 def main():
 
@@ -15,13 +16,12 @@ def main():
                 bichthuy.right(1)
                 bichthuy.forward(cao)
 
-        ve_hinh_tron(360, 0.5)
-
         def ve_tron(solieu, chieucao):
             for i in range(solieu):
                 bichthuy.left(1)
                 bichthuy.backward(chieucao)
 
+        ve_hinh_tron(360, 0.5)
         ve_tron(90, 0.5)
         bichthuy.left(90)
         bichthuy.forward(40)
@@ -29,13 +29,13 @@ def main():
         ve_hinh_tron(180,2.5)
         bichthuy.right(90)
         bichthuy.forward(40)
-        bichthuy.left(90)
+        bichthuy.right(-90)
         ve_hinh_tron(360, 0.5)
         ve_tron(180, 0.5)
         bichthuy.left(90)
-        bichthuy.forward(95)
+        bichthuy.forward((900/pi)-80-(360/pi))
 
-    wns.bgcolor("#e6e6ff")
+    wns.bgcolor("#e6ffff")
 
     def annyong(mauu, yoona):
         ngoc = turtle.Turtle()
@@ -47,17 +47,18 @@ def main():
         banh_xe(ngoc)
         ngoc.end_fill()
 
-    annyong(-3 * 150, "#0000ff")
-    annyong(-2*150, "#0000ff" )
-    annyong(-1*150, "#0000ff")
-    annyong(0*150, "#0000ff")
-    annyong(1*150, "#0000ff")
-    annyong(2 * 150, "#0000ff")
-    annyong(-4*150, "#000066")
-    annyong(3*150, "#000066" )
+    annyong(-3 * 150, "#00cc7a")
+    annyong(-2*150, "#00e600" )
+    annyong(-1*150, "#00cc7a")
+    annyong(0*150, "#00e600")
+    annyong(1*150, "#00cc7a")
+    annyong(2 * 150, "#00e600")
+    annyong(-4*150, "#000080")
+    annyong(3*150, "#000080" )
 
     def nut_that(brother):
         abcxyz = turtle.Turtle()
+        abcxyz.color("#ffff00")
         abcxyz.shape("circle")
         abcxyz.shapesize(0.1, 0.1)
         abcxyz.pensize(6)
@@ -72,25 +73,18 @@ def main():
     nut_that(4*150+31)
 
     conrua = turtle.Turtle()
+    conrua.color("#ffff00")
+    conrua.shape("circle")
+    conrua.shapesize(0.1, 0.1)
+    conrua.pensize(6)
     conrua.penup()
     conrua.forward(-4*150)
     conrua.pendown()
     conrua.forward(2*(4*150+30))
 
-    jordan = turtle.Turtle()
-    jordan.color("#0000ff")
-    jordan.pensize(6)
-    jordan.penup()
-    jordan.left(90)
-    jordan.forward(200)
-    jordan.right(90)
-    jordan.forward(0)
-    jordan.pendown()
-    jordan.write("Can you calculate the distance of AB ?", move=False, align="center", font =("TimesNewRoman",40,"bold"))
-
     def dau_cuoi_tuong_ung(chieu_rong, chu_cai):
         thy = turtle.Turtle()
-        thy.color("#0000ff")
+        thy.color("#000099")
         thy.pensize(6)
         thy.penup()
         thy.forward(chieu_rong)
@@ -101,6 +95,19 @@ def main():
 
     dau_cuoi_tuong_ung(-4*150-45,"A")
     dau_cuoi_tuong_ung(4*150+50, "B")
+
+    jordan = turtle.Turtle()
+    jordan.color("#660066")
+    jordan.pensize(6)
+    jordan.penup()
+    jordan.left(90)
+    jordan.forward(200)
+    jordan.right(90)
+    jordan.forward(0)
+    jordan.pendown()
+    jordan.write("Can you calculate the distance of AB ?", move=False, align="center", font =("TimesNewRoman",40,"bold"))
+
+
 
     wns.exitonclick()
 

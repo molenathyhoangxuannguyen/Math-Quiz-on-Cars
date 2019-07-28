@@ -71,6 +71,12 @@ def main():
     nut_that(-4*150-32)
     nut_that(4*150+31)
 
+    conrua = turtle.Turtle()
+    conrua.penup()
+    conrua.forward(-4*150)
+    conrua.pendown()
+    conrua.forward(2*(4*150+30))
+
     jordan = turtle.Turtle()
     jordan.color("#0000ff")
     jordan.pensize(6)

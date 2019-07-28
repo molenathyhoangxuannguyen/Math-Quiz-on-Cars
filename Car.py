@@ -1,5 +1,6 @@
 import turtle
 from math import pi
+import random
 
 def main():
 
@@ -37,9 +38,10 @@ def main():
 
     wns.bgcolor("#e6ffff")
 
-    def annyong(mauu, yoona):
+    def annyong(mauu, yoona, yuri):
         ngoc = turtle.Turtle()
         ngoc.color(yoona)
+        ngoc.fillcolor(yuri)
         ngoc.penup()
         ngoc.forward(mauu)
         ngoc.pendown()
@@ -47,14 +49,15 @@ def main():
         banh_xe(ngoc)
         ngoc.end_fill()
 
-    annyong(2 * 150, "#00cc7a")
-    annyong(1*150, "#00e600" )
-    annyong(0*150, "#00cc7a")
-    annyong(-1*150, "#00e600")
-    annyong(-2*150, "#00cc7a")
-    annyong(-3* 150, "#00e600")
-    annyong(-4*150, "#000080")
-    annyong(3*150, "#000080" )
+    lan_nay = random.choice(["#000080", "#00e600","#00cc7a" ])
+    annyong(3 * 150, "#000080", "#00e600")
+    annyong(1 * 150, lan_nay, lan_nay)
+    annyong(-1 * 150, lan_nay, lan_nay)
+    annyong(-3 * 150, lan_nay, lan_nay)
+    annyong(-4 * 150, "#000080", "#00cc7a")
+    annyong(-2 * 150, lan_nay, lan_nay)
+    annyong(0*150, lan_nay, lan_nay)
+    annyong(2*150, lan_nay, lan_nay)
 
     def nut_that(brother):
         abcxyz = turtle.Turtle()
@@ -65,7 +68,7 @@ def main():
         abcxyz.penup()
         abcxyz.forward(brother)
         abcxyz.right(90)
-        abcxyz.forward(90/pi)
+        abcxyz.forward(90/pi+pi)
         abcxyz.pendown()
         abcxyz.dot()
 
@@ -80,14 +83,14 @@ def main():
     conrua.penup()
     conrua.forward(-4*150-90/pi)
     conrua.right(90)
-    conrua.forward(90/pi)
+    conrua.forward(90/pi+pi)
     conrua.left(90)
     conrua.pendown()
-    conrua.forward((900/pi)*7)
+    conrua.forward(((900/pi)-(80+180/pi))*8+180/pi)
 
     def dau_cuoi_tuong_ung(chieu_rong, chu_cai):
         thy = turtle.Turtle()
-        thy.color("#000099")
+        thy.color("#730099")
         thy.pensize(6)
         thy.penup()
         thy.forward(chieu_rong)
@@ -99,16 +102,23 @@ def main():
     dau_cuoi_tuong_ung(-4*150-45,"A")
     dau_cuoi_tuong_ung(4*150+50, "B")
 
-    jordan = turtle.Turtle()
-    jordan.color("#660066")
-    jordan.pensize(6)
-    jordan.penup()
-    jordan.left(90)
-    jordan.forward(200)
-    jordan.right(90)
-    jordan.forward(0)
-    jordan.pendown()
-    jordan.write("Can you calculate the distance of AB ?", move=False, align="center", font =("TimesNewRoman",40,"bold"))
+    answer = wns.numinput("Can you calculate the length of AB ?", "Your answer:  ", default=None, minval=0,
+                          maxval=10000000)
+
+    def written(soluong, vietchu):
+        jordan = turtle.Turtle()
+        jordan.color("#730099")
+        jordan.pensize(6)
+        jordan.penup()
+        jordan.left(90)
+        jordan.forward(soluong)
+        jordan.right(90)
+        jordan.forward(0)
+        jordan.pendown()
+        jordan.write(vietchu, move=False, align="center", font =("TimesNewRoman",40,"bold") )
+
+    written(210, "Can you calculate the length of AB ?")
+    written(150, answer)
 
 
 

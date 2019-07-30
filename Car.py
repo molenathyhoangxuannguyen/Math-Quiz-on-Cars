@@ -1,3 +1,5 @@
+#Written by Thy H. Nguyen
+
 import turtle
 from math import pi
 import random

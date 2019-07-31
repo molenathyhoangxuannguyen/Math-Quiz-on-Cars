@@ -40,9 +40,9 @@ def main():
 
     wns.bgcolor("#e6ffff")
 
-    def annyong(mauu, yoona, yuri):
+    def annyong(mauu, yuri):
         ngoc = turtle.Turtle()
-        ngoc.color(yoona)
+        ngoc.color("#000080")
         ngoc.fillcolor(yuri)
         ngoc.penup()
         ngoc.forward(mauu)
@@ -51,27 +51,23 @@ def main():
         banh_xe(ngoc)
         ngoc.end_fill()
 
-    lan_nay_1 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_2 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_3 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_4 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_5 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_6 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_7 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_8 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_9 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_10 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_11 = random.choice(["#000080", "#00e600", "#00cc7a"])
-    lan_nay_12 = random.choice(["#000080", "#00e600", "#00cc7a"])
+    lan_nay_1 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_2 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_3 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_4 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_5 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_6 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_7 = random.choice(["#00e600", "#00cc7a"])
+    lan_nay_8 = random.choice(["#00e600", "#00cc7a"])
 
-    annyong(3 * 150, "#000080", "#00e600")
-    annyong(1 * 150, lan_nay_1, lan_nay_2)
-    annyong(-1 * 150, lan_nay_3, lan_nay_4)
-    annyong(-3 * 150, lan_nay_5, lan_nay_6)
-    annyong(-4 * 150, "#000080", "#00cc7a")
-    annyong(-2 * 150, lan_nay_7, lan_nay_8)
-    annyong(0*150, lan_nay_9, lan_nay_10)
-    annyong(2*150, lan_nay_11, lan_nay_12)
+    annyong(3 * 150, lan_nay_1)
+    annyong(1 * 150, lan_nay_2)
+    annyong(-1 * 150, lan_nay_3)
+    annyong(-3 * 150, lan_nay_4)
+    annyong(-4 * 150, lan_nay_5)
+    annyong(-2 * 150, lan_nay_6)
+    annyong(0*150, lan_nay_7)
+    annyong(2*150, lan_nay_8)
 
     def nut_that(brother):
         abcxyz = turtle.Turtle()
@@ -82,7 +78,7 @@ def main():
         abcxyz.penup()
         abcxyz.forward(brother)
         abcxyz.right(90)
-        abcxyz.forward(90/pi+pi)
+        abcxyz.forward(90/pi)
         abcxyz.pendown()
         abcxyz.dot()
 
@@ -97,14 +93,14 @@ def main():
     conrua.penup()
     conrua.forward(-4*150-90/pi)
     conrua.right(90)
-    conrua.forward(90/pi+pi)
+    conrua.forward(90/pi)
     conrua.left(90)
     conrua.pendown()
     conrua.forward(((900/pi)-(80+180/pi))*8+180/pi)
 
     def dau_cuoi_tuong_ung(chieu_rong, chu_cai):
         thy = turtle.Turtle()
-        thy.color("#730099")
+        thy.color("#660066")
         thy.pensize(6)
         thy.penup()
         thy.forward(chieu_rong)
@@ -121,7 +117,7 @@ def main():
 
     def written(soluong, vietchu):
         jordan = turtle.Turtle()
-        jordan.color("#730099")
+        jordan.color("#660066")
         jordan.pensize(6)
         jordan.penup()
         jordan.left(90)

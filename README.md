@@ -1,6 +1,6 @@
 # Car
 This is a difficult math quiz. Can you calculate the length of AB?
-Using Turtle. Install Pycharm to run this program, answer the question, and see the explanation.
+Using Turtle. Run this program with python, answer the question, and see the explanation.
 
 
 Citation:
